@@ -461,16 +461,47 @@
         </button>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-btn-close" type="button">
-          <svg class="icon" width="8" height="8">
+        <button
+          class="modal-btn-close"
+          type="button"
+          aria-label="Modal close button"
+        >
+          <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
 
-        <form action=""></form>
+        <form class="modal-form" name="modal" novalidate autocomplete="on">
+          <div class="field">
+            <label for="user-name">Name</label>
+            <input id="user-name" type="user-name" minlength="3" required />
+            <svg class="form-icon" width="" height="">
+              <use href=""></use>
+            </svg>
+          </div>
+          <div class="field">
+            <label for="user-tel">Phone</label>
+            <input id="user-tel" type="user-tel" />
+          </div>
+          <div class="field">
+            <label for="user-email">Email</label>
+            <input type="user-email" />
+          </div>
+          <div class="field">
+            <label for="text">Comment</label>
+            <input type="text" />
+          </div>
+          <div class="form-field">
+            <label for="">
+              <input type="checkbox" name="" />I accept the terms and conditions
+              of the Privacy Policy</label
+            >
+          </div>
+          <button type="submit"></button>
+        </form>
       </div>
     </div>
   </body>
