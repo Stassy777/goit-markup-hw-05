@@ -705,7 +705,7 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.form-checkbox-modal:checked + .checkbox-icon {
+.form-checkbox-modal:checked + .form-label-modal > .checkbox-checked-icon {
   fill: #f4f4fd;
   background-color: #404bbf;
   border: none;
