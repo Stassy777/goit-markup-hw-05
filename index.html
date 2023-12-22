@@ -527,23 +527,23 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="field-modal">
+          <div class="field-modal privacy">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              required
+              value="true"
+              class="form-checkbox-modal visually-hidden"
+            />
             <label class="form-label-modal" for="user-privacy">
-              <input
-                type="checkbox"
-                name="user-privacy"
-                id="user-privacy"
-                required
-                value="true"
-                class="form-checkbox-modal"
-              />
               <span class="checkbox-icon">
                 <svg class="checkbox-checked-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox-checked"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="" class="link">Privacy Policy</a>
+              <a href="" class="checkbox-link">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="modal-btn-close-hero">Send</button>
