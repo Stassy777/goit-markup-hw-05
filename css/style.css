@@ -622,16 +622,20 @@ img {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
   letter-spacing: 0.48px;
   margin-bottom: 4px;
+  line-height: 1.17;
 }
 .field-modal {
   position: relative;
+}
+.form-block {
   margin-bottom: 8px;
 }
 .form-input-modal {
+  background-color: transparent;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 40px;
   width: 100%;
   border-radius: 4px;
@@ -648,24 +652,30 @@ img {
   transform: translateY(-50%);
   position: absolute;
   fill: #8e8f99;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input-modal:focus + .form-icon-modal {
   fill: #4d5ae5;
 }
+.form-block.comment {
+  margin-bottom: 16px;
+}
 .form-message {
-  color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  color: rgba(46, 47, 66, 0.4);
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0.48px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   width: 100%;
-  resize: vertical;
-  min-height: 120px;
-  max-height: 180px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 120px;
   border-radius: 4px;
   outline: transparent;
-  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding: 8px 16px;
 }
 .form-message:focus {
   border-color: #4d5ae5;
