@@ -647,6 +647,7 @@ img {
   border-radius: 4px;
 }
 .form-icon-modal {
+  color: black;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
